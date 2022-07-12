@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "75231d89-0509-487f-bf3e-96fde7a906d0",
+		"name": "Claro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19150574"
+	},
+	"item": [
+		{
+			"name": "Listar Contatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/contato",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Contato",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"teste@teste.com\",\r\n  \"nome\": \"Ana Lucia UPDATED\",\r\n  \"telefone\": \"1191234-5678\",\r\n  \"endereco\": {\r\n    \"id\": 0,\r\n    \"code\": \"02307-230\",\r\n    \"address\": \"string\",\r\n    \"city\": \"string\",\r\n    \"state\": \"string\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/contato",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Contato Por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/contato/teste@teste.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contato",
+						"teste@teste.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recuperar Endereco pelo Cep",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/endereco/01310-000",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco",
+						"01310-000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Contato",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/contato/teste@teste.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contato",
+						"teste@teste.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Contato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"teste@teste.com\",\r\n  \"nome\": \"Ana Lucia\",\r\n  \"telefone\": \"1191234-5678\",\r\n  \"endereco\": {\r\n    \"id\": 0,\r\n    \"code\": \"02307-000\",\r\n    \"address\": \"string\",\r\n    \"city\": \"string\",\r\n    \"state\": \"string\"\r\n  },\r\n  \"dataDeCadastro\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/contato",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contato"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
