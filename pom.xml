@@ -10,7 +10,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.desafio-claro</groupId>
+	<groupId>com.consultacep</groupId>
 	<artifactId>api-rest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>api-rest</name>
@@ -62,28 +62,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Swagger-Starter -->
-<!--		<dependency>-->
-<!--			<groupId>io.springfox</groupId>-->
-<!--			<artifactId>springfox-boot-starter</artifactId>-->
-<!--			<version>3.0.0</version>-->
-<!--		</dependency>-->
-
-		<!-- Swagger2 -->
-<!--		<dependency>-->
-<!--			<groupId>io.springfox</groupId>-->
-<!--			<artifactId>springfox-swagger2</artifactId>-->
-<!--			<version>3.0.0</version>-->
-<!--		</dependency>-->
-
-		<!-- Swagger-UI -->
-<!--		<dependency>-->
-<!--			<groupId>io.springfox</groupId>-->
-<!--			<artifactId>springfox-swagger-ui</artifactId>-->
-<!--			<version>3.0.0</version>-->
-<!--		</dependency>-->
-
-		<!-- OpenAPI-UI -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
@@ -108,7 +86,6 @@
 			<version>2.9.0</version>
 		</dependency>
 
-		<!-- RETIRAR AO FINAL -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
