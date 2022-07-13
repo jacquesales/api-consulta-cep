@@ -24,7 +24,7 @@ Clone o repositório
 `run`
 
 ### Acesso aos endpoints
-Postman (importe a collection disponibilizada: Claro.postman_collection.json)
+Postman (importe a collection disponibilizada: Contatos.postman_collection.json)
 ou
 Swagger
 http://localhost:8080/swagger-ui/index.html#/
